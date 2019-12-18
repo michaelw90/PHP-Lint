@@ -4,24 +4,7 @@ GitHub Action implementation of the PHPLint Package provided by [https://github.
 
 ## Usage
 
-You can use it as a Github Action like this:
-
-_.github/main.workflow_
-```
-workflow "PHP Linting" {
-  resolves = ["Execute"]
-  on = "pull_request"
-}
-
-action "Execute" {
-  uses = "michaelw90/php-lint@master"
-}
-
-```
-
-If provided, a `.phplint.yml` file in the root will be used for configuration during run of the Action.
-
-Or to use [GitHub Actions](https://github.com/features/actions)
+Use with [GitHub Actions](https://github.com/features/actions)
 
 _.github/workflows/phplint.yml_
 
@@ -35,6 +18,8 @@ jobs:
         - uses: actions/checkout@v1
         - uses: michaelw90/PHP-Lint@master
 ```
+
+If provided, a `.phplint.yml` file in the root will be used for configuration during run of the Action.
 
 ## See it in practice
 
