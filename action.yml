@@ -1,0 +1,9 @@
+name: 'PHP Lint'
+description: 'Run Lint Against Pull Request'
+author: 'Michael Wright <php-lint@wserver.co.uk>'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'eye'  
+  color: 'gray-dark'
